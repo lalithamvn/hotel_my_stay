@@ -10,6 +10,11 @@ public class CommentsSection {
     @SerializedName("user")
     private String user;
 
+    public CommentsSection(String comments, String user) {
+        this.comments = comments;
+        this.user = user;
+    }
+
     public String getId() {
         return id;
     }
